@@ -1,56 +1,186 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="media/css/style.css" rel="stylesheet" type="text/css" />
+<!-- <link href="media/css/style.css" rel="stylesheet" type="text/css" /> -->
 <!--[if lte IE 8]><link rel="stylesheet" type="text/css" media="screen" href="media/css/ie.css" /><![endif]--> 
 <script type="text/javascript" src="media/js/jquery.js"></script>
 <script type="text/javascript" src="media/js/script.js"></script>
-<title>Название</title>
+<title>Читамаг</title>
 </head>
 
 <body>
-<div class="wrapper">
 
-<!--PAGE-->
-<div class="page">
-
-    <!--HEADER-->
-	<div class="header">
+    <!-- header -->
+	<header>
 		<a id="logo_box" href="/" title="Название"><img id="logo" src="static/img/logo.png" alt="Название" width="200" height="60" /></a>
-	</div>
-    <!--/HEADER-->
+        <input id="search" type="text" placeholder="Поиск в каталоге" />
 
+        <div class="info-links">
+            <a href="">Доставка и оплата</a>
+            <a href="">Сервис и гарантии</a>
+            <a href="">Контакты</a>
+        </div>
 
-    <!--MAIN-->
-	<div class="main">
-		<div class="col_l col">
-			<div class="menu">
-				<ul>
-					<li class="curr"><a href="#">Пункт1</a></li>
-					<li><a href="#">Пункт2</a></li>
-					<li><a href="#">Пункт3</a></li>
-				</ul>
-			</div><!--/menu-->
-		</div><!--/col_l-->
-		
-		<div class="col_r col">
-		</div><!--/col_r-->
-	</div>
-    <!--/MAIN-->
+        <div class="discounts">
+            <img src="" alt="">
+            <a href="">Акции и скидки</a>
+        <div>
+
+        <div class="phone">
+            <img src="" alt="">
+            <span>23-45-34</span>    
+            <a href="">Вход</a>
+            <a href="">Регистрация</a>
+        </div>
+
+        <div class="order">
+            <img src="" alt="">
+            <a href="">Ваш заказ</a>
+            <p>2 товара на</p>
+            <p>25 340 <span>руб.</span></p>
+        </div>
+	<header>
+    <!-- /header -->
+
+    <!-- navigation -->
+	<aside>
+		<nav>
+			<ul>
+				<li class="current"><a href="#">Бытовая техника</a></li>
+                    <ul>
+                        <li><a href="">Холодильное оборудование</a></li>
+                        <li><a href="">Стиральные машины</a></li>
+                        <li><a href="">Кухонные плиты</a></li>
+                        <li><a href="">Посудомоечные машины</a></li>
+                        <li><a href="">Утюги</a></li>
+                        <li class="current"><a href="#">Пылесосы</a></li>
+                        <li><a href="#">Автопылесосы</a></li>
+                        <li><a href="#">Швейные машинки</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#">Гладильные системы</a></li>
+                    </ul>
+				<li><a href="#">Кухонная техника</a></li>
+				<li><a href="#">Климатическая техника</a></li>
+                   <li><a href="">Мобильная связь</a></li>
+                   <li><a href="">Телефоны и средства связи</a></li>
+                   <li><a href="">Телевизоры</a></li>
+                   <li><a href="">DVD техника</a></li>
+                   <li><a href="">Фото и видеотехника</a></li>
+                   <li><a href="">Аудиотехника</a></li>
+                   <li><a href="">Компьютеры и оргтехника</a></li>
+			</ul>
+		</nav>
+	</aside>
+    <!-- /navigation -->
+
+    <!-- main -->
+	<section>
+        <!-- filter -->
+        <aside>
+            <form action="/">
+                <div class="check-text-group">
+                    <h3>Производители</h3>
+                    <a href="">Samsung</a>
+                    <a href="">Bosch</a>
+                    <a href="">LG</a>
+                    <a href="">Philips</a>
+                    <a href="">Electrolux</a>
+                    <a href="">Thomas</a>
+                    <a href="">Zanussi</a>
+                    <a href="">Rowetta</a>
+                </div>
+
+                <div class="input-box-price">
+                    <h3>Цена</h3>
+                    До <input type="text"> руб.
+                    <img src="">
+                </div>
+
+                <div class="check-text-group">
+                    <h3>Пылесборник</h3>
+                    <a href="">Мешок</a>
+                    <a href="">Мешок и циклонный фильтр</a>
+                    <a href="">Циклонный фильтр</a>
+                </div>
+
+                <div class="controls">
+                    <a href="">Применить</a>
+                </div>
+            </form>
+        </aside>
+        <!-- /filter -->
+
+        <!-- main-header -->
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="">бытовая техника</a> /
+        </div>
+        <!-- /breadcrumbs -->
+        <h1>Пылесосы</h1>
+
+        <div class="sorting">
+            <a href="">сначала дорогие</a>
+            <a href="">сначала дешевые</a>
+        </div>
+        <!-- /main-header -->
+
+        <!-- object-list -->
+        <!-- object -->
+        <article>
+            <img src="" alt="" width="32" height="32">
+            <a>Samsung Silencio SR8895</a><br />
+            12 460 <span>руб.</span>
+        </article>
+        <!-- /object -->
+
+        <!-- object -->
+        <article class="hit new">
+            <img src="" alt="" width="32" height="32">
+            <a>Scarlett SC-083</a><br />
+            9 340 <span>руб.</span>
+        </article>
+        <!-- /object -->
+
+        <!-- pagination -->
+        <div class="pagination">
+            <li class="current">1</li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+        </div>
+        <!-- /pagination -->
+    </section>	
+    <!-- /main -->
 	
-	
-    <!--FOOTER-->
-    <div class="footer">
-		<div id="copyright">© 2011 «Название»</div>
+    <!-- footer -->
+    <footer>
+		<div id="copyright">© 2012 Читамаг все <br />
+        <span>цены указаны в рублях</span></div>
+
+        <div>
+            <a href="">Доставка и оплата</a>
+            <a href="">Акции и скидки</a>
+        </div>
+
+        <div>
+            <a href="">Сервис и гарантии</a>
+        </div>
+
+        <div>
+            <a href="">Контакты</a>
+        </div>
+
+        <input id="search" type="text" placeholder="Поиск в каталоге" />
 		
-		<a id="madein" title="Разработка сайта — студия OctoberWeb" href="http://octoberweb.ru/"><img id="octoberweb" alt="Разработка сайта — студия OctoberWeb" src="media/img/octoberweb.png" width="32" height="32"/>разработка сайта <span>OctoberWeb</span></a>
-    </div>
-    <!--/FOOTER-->
+        <div class="octoberweb">
+		    <a id="madein" title="Разработка сайта — студия OctoberWeb" href="http://octoberweb.ru/">
+            <img id="octoberweb" alt="Разработка сайта — студия OctoberWeb" src="media/img/octoberweb.png" width="32" height="32"/>
+            </a>
+            Сделано в <br /><a href="">OctoberWeb</a>
+        </div>
+    </footer>
+    <!-- /footer -->
     
-</div>
-<!--/PAGE-->
-
-</div><!--/wrapper-->
 </body>
 </html>
