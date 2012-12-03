@@ -1,22 +1,37 @@
 @charset "utf-8";
-/*reset*/
-html,body,div,span,
-h1,h2,h3,h4,p,blockquote,a,
-small,strike,strong,b,em,i,sub,sup,img,ins,
-ul,ol,li,dl,dt,dd,
-fieldset,form,label,
-table,caption,tbody,tfoot,thead,tr,th,td {
-	border: none;
-	padding:0;
-	margin:0;
-	outline:0;
-	vertical-align:baseline
+
+/* reset */
+/* eric-mayer-reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* /eric-mayer-reset */
 li {list-style:none}
 textarea {resize: none;}
-/*/reset*/
+/* /reset */
 
-/*fonts*/
+/* fonts */
 @font-face {font-family: 'PT Sans'; 
 	src: url('../fonts/PTS55F_W.eot'); 
 	src:
@@ -41,287 +56,56 @@ textarea {resize: none;}
 		url('../fonts/PTS75F_W.woff') format('woff'),
 		url('../fonts/PTS75F_W.ttf') format('truetype'),
 		url('../fonts/PTS75F_W.svg#PTSans-Bold') format('svg');}
-/*/fonts*/
+/* /fonts */
 
-
-/*-----------------MAIN-STYLES-----------------*/
 body {
-	background: #fff;
-	color: #000;
-	font: 14px/18px Arial, Helvetica, sans-serif;
-}
-
-.wrapper {
+	width: 960px;
 	margin: 0 auto;
-	width: 996px;
+	padding-top: 5px;
+	background-color: #D7D7D7;  
 }
-
-.page {padding: 0 18px 0 18px;}
-
-
-
-a {color: #0b739f}
-a:hover {color: #0096d5}
-.dot {text-decoration: none; border-bottom: 1px dotted #0b739f;}
-.dot:hover {border-bottom-color: #0096d5;}
-.dash {text-decoration: none; border-bottom: 1px dashed #0b739f;}
-.dash:hover {border-bottom-color: #0096d5;}
-
-
-h1 {
-	font: bold 30px/36px Arial, Helvetica, sans-serif;
-	margin: 0 0 18px 0;
+.site-header .header-box{
+	display: inline-block;
 }
-h2 {
-	font: bold 18px/24px Arial, Helvetica, sans-serif;
-	margin: 0 0 12px 0;
+.search {
+	background-color: white;
+	width: 162px;
+	height: 31px;
 }
-h3 {
-	font: bold 14px/18px Arial, Helvetica, sans-serif;
-	margin: 0 0 12px 0;
+.search input {
+	display: inline-block;
+	margin-right: -4px;
 }
-
-
-input, textarea {
-	font: 14px/18px Arial, Helvetica, sans-serif;
+.search .search-text {
+	outline: none;
+	-webkit-appearance: none;
+	border: none;
+}
+.site-main .column {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0;
+	margin-right: -4px;
 }
-.inpt, .txtr {
-	padding: 3px 8px;
+.site-main .left-column {
+	background-color: #956F6F;
+	width:200px;
 }
-
-/*-----------------MAIN-STYLES-END-----------------*/
-
-
-
-
-/*-----------------HEADER-----------------*/
-/*layout*/
-.header {
-	position: relative;
-	height: 148px;
-	margin: 0 0 0 0;
+.site-main .right-column {
+	background-color: #688A6E;
+	width:824px;
 }
-/*layout*/
-
-
-/*logo*/
-#logo_box {
-	display: block;
-	height: 60px;
-	width: 211px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-/*logo-end*/
-
-
-
-/*menu*/
-.menu {
-}
-.menu li {
-}
-
-.menu li a {
-	color: #;
-}
-.menu li a:hover {
-	color: #;
-}
-/*menu-end*/
-
-
-
-/*contacts*/
-/*/contacts*/
-/*--------------HEADER-END--------------*/
-
-
-
-
-/*----------------PAGE------------------*/
-/*layout*/
-.col {
-	display: inline-block;
-	vertical-align: top;
-}
-/*/layout*/
-
-
-
-/*faq*/
-.faq {
-	margin: 0 0 36px 0;
-}
-
-.question {
-	background: #fffae4;
-	margin: 0 0 9px 0;
-	border: 1px solid #ffda46;
-	border-radius: 4px;
-	padding: 9px 15px 10px 15px;
-}
-.answer {
-	margin: 0 0 0 15px;
-}
-
-.faq_author {
-	color: #ada4a9;
-	font-size: 12px;
-	font-style: italic;
-}
-
-.faq_submit {
-	margin-left: -5px;
-}
-.faq_form .faq_submit input {
-	background-position: -103px 0;
-	width: 160px;
-}
-.faq_form input:hover {
-	background-position: -103px -52px;
-}
-.faq_form input:active {
-	background-position: -103px -104px;
-}
-/*/faq*/
-/*-----------------PAGE-END-----------------*/
-
-
-
-
-/*-----------------FOOTER-----------------*/
-.footer {
-	border-top:1px solid #000;
-	position:relative;
-	margin:36px 0 0 0;
-	padding:14px 0 24px 0;
-}
-#copyright {
-}
-#madein {
-	color: #000;
-	font-size:12px;
-	font-style: italic;
-	line-height:14px;
-	text-decoration:none;
-	display:block;
-	position:absolute;
-	top:14px;
-	right:6px;
-	width: 148px;
-}
-#octoberweb {
-	float: left;
-	display: inline;
-	margin: 0 9px 0 0;
-}
-#madein span{
-	color: #797204;
-	text-decoration: underline;
-}
-#madein span:hover {color: #9f7d05;}
-/*------------------FOOTER-END-------------------*/
-
-
-
-
-/*---------------------STUFF--------------------*/
-/*text-page*/
-.text p {margin-bottom: 12px}
-.text ul, .text ol {margin: 0 0 18px 36px}
-.text li {margin-bottom: 6px;}
-.text ul li {list-style: outside disc}
-.text ol li {list-style: outside decimal}
-.text h2, .text h3 {margin: 24px 0 9px 0;}
-.text table {
-	margin: 18px 0 18px 0;
-	font-size: 14px;
-	border-collapse: collapse;
-}
-.text tr, .text td {
-	border:1px solid #eee2ba;
-	padding:4px 8px 4px 8px;
-}
-.text thead td {
-	font-weight: bold;
-	background-color: #f3e9cb;
-	color: #000;
-	text-align: center;
-}
-.img_left {
-	float: left;
-	margin: 0 18px 0 0; 
-}
-.img_right {
+.site-main .filter-box {
 	float: right;
-	margin: 0 0 0 18px; 
+	vertical-align: top;
 }
-.text blockquote {
-	margin-left: 18px;
-	font-style: italic;
+.page-header h1 {
+	display: inline;
 }
-/*/text-page*/
-
-
-
-/*pagination*/
-.pgn {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 30px;
-	margin: 18px 54px 0 0;
-	text-align: center;
+.site-footer div,
+.site-footer nav,
+.site-footer form {
+	display: inline-block;
 }
-.pgn a {
-	padding: 4px 9px 5px 10px;
+.pagination li{
+	display: inline-block;
 }
-.pgn .curr {
-	background: #f9f0d6;
-	border-radius: 3px;
-	text-decoration: none;
-	color: #543f02;
-}
-/*/pagination*/
-
-
-
-/*modal*/
-.modal {
-	padding: 20px;
-	margin: 0 auto;
-}
-/*/modal*/
-
-
-
-
-/*forms*/
-.input input {
-	width: ;
-}
-/*/forms*/
-
-
-
-/*placeholder*/
-input::-webkit-input-placeholder {
-	font: italic 13px/18px 'PT Sans', Arial, Helvetica, sans-serif;
-	color: #5a5a5a;
-}
-input:-moz-placeholder {
-	font: italic 13px/18px 'PT Sans', Arial, Helvetica, sans-serif;
-	color: #5a5a5a;
-}
-input:placeholder {
-	font: italic 13px/18px 'PT Sans', Arial, Helvetica, sans-serif;
-	color: #5a5a5a;
-}
-/*/placeholder*/
-
-
-.cl {clear:both}
